@@ -5,6 +5,9 @@ fun main() {
 }
 
 fun findMedianSortedArrays(nums1: IntArray, nums2: IntArray): Double {
+    /** Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
+    The overall run time complexity should be O(log (m+n)). */
+
     val array = (nums1 + nums2).sortedArray()
     return if (array.size % 2 == 0) {
         val index = array.size / 2
